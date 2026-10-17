@@ -195,8 +195,8 @@ function paintBack(logo) {
   const ctx = c.getContext('2d');
   paintKraft(ctx, W, H, 33);
   ctx.globalCompositeOperation = 'multiply';
-  const ls = W * 0.62;
-  ctx.drawImage(logo, (W - ls) / 2, H * 0.30, ls, ls * (logo.height / logo.width));
+  const ls = W * 0.56;
+  ctx.drawImage(logo, (W - ls) / 2, H * 0.215, ls, ls * (logo.height / logo.width));
   ctx.globalCompositeOperation = 'source-over';
   ctx.fillStyle = INK;
   ctx.textAlign = 'center';
